@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acervo - Biblioteca Arruda</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <div class="nav-inner">
+
+        <button
+            class="menu-toggle"
+            id="menu-toggle"
+            aria-expanded="false">
+            ☰
+        </button>
+
+
+        <div class="menu" id="main-menu">
+            <a href="index.html">Início</a>
+            <a href="acervo.html">Acervo</a>
+            <a href="servico.html">Serviços</a>
+        </div>
+
+        <button id="tema-btn">Tema</button>
+
+    </div>
+</nav>
+
+<main class="container">
+
+    <section>
+
+        <h1>Acervo da Biblioteca</h1>
+
+        <p>
+            Consulte os livros disponíveis em nosso catálogo.
+        </p>
+
+    </section>
+
+    <div class="stats">
+
+        <div class="stat-card">
+            <h3>0</h3>
+            <p>Livros cadastrados</p>
+        </div>
+
+        <div class="stat-card">
+            <h3>0</h3>
+            <p>Disponíveis</p>
+        </div>
+
+        <div class="stat-card">
+            <h3>0</h3>
+            <p>Emprestados</p>
+        </div>
+
+    </div>
+
+    <section>
+
+        <h2>Pesquisar Livro</h2>
+
+        <input
+            type="text"
+            id="search"
+            placeholder="Digite o título ou autor..."
+            style="
+                width:100%;
+                padding:12px;
+                border-radius:8px;
+                border:1px solid #ccc;
+                margin-top:10px;
+            ">
+
+    </section>
+
+    <div class="filters">
+
+        <button class="filter-btn active">Todos</button>
+        <button class="filter-btn">Ficção</button>
+        <button class="filter-btn">Tecnologia</button>
+        <button class="filter-btn">História</button>
+        <button class="filter-btn">Disponíveis</button>
+
+    </div>
+
+    <div class="books-grid">
+
+        <!-- Livro 1 -->
+        <div
+            class="book-card"
+            data-category="ficção"
+            data-status="disponivel">
+
+            <div class="book-cover">
+
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLTEyytvILEUBGYuAqr8Wg9MrZHeJqKqQFOQswsAsFNg&s=10"
+                    alt="Inferno - Dan Brown">
+
+            </div>
+
+            <div class="book-info">
+
+                <div class="book-title">
+                    Inferno
+                </div>
+
+                <div class="book-author">
+                    Dan Brown
+                </div>
+
+                <span class="book-status available">
+                    Disponível
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <!-- Livro 2 -->
+        <div
+            class="book-card"
+            data-category="ficção"
+            data-status="disponivel">
+
+            <div class="book-cover">
+
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtGfIz-vAOEn2hX1eUSRGCTCUFXhlYvuMGBON_OlT_Rg&s=10"
+                    alt="A Cinco Passos de Você">
+
+            </div>
+
+            <div class="book-info">
+
+                <div class="book-title">
+                    A Cinco Passos de Você
+                </div>
+
+                <div class="book-author">
+                    Rachael Lippincott
+                </div>
+
+                <span class="book-status available">
+                    Disponível
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</main>
+
+<footer>
+    <p>© 2026 EEPJAP</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

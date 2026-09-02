@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+<title>Leitura - Biblioteca Arruda</title>
+
+<link
+    rel="stylesheet"
+    href="style.css">
+
+</head>
+
+<body>
+
+<nav>
+
+<div class="nav-inner">
+
+    <button
+            class="menu-toggle"
+            id="menu-toggle"
+            aria-expanded="false">
+            ☰
+        </button>
+
+
+    <div
+        class="menu"
+        id="main-menu">
+
+        <a href="index.html">
+            Início
+        </a>
+
+        <a href="acervo.html">
+            Acervo
+        </a>
+
+        <a href="servico.html">
+            Serviços
+        </a>
+
+    </div>
+
+
+    <button id="tema-btn">
+
+        Tema
+
+    </button>
+
+</div>
+
+</nav>
+
+<main class="container">
+
+<section class="page-intro">
+
+    <h1>
+        Leitura
+    </h1>
+
+    <p>
+        Descubra novos livros, participe de projetos
+        de leitura e compartilhe suas experiências
+        literárias na Biblioteca Arruda.
+    </p>
+
+</section>
+
+
+<div class="stats">
+
+
+    <div class="stat-card">
+
+        <h3>
+            3
+        </h3>
+
+        <p>
+            Projetos de leitura
+        </p>
+
+    </div>
+
+
+    <div class="stat-card">
+
+        <h3>
+            1
+        </h3>
+
+        <p>
+            Clube do Livro
+        </p>
+
+    </div>
+
+
+    <div class="stat-card">
+
+        <h3>
+            20
+        </h3>
+
+        <p>
+            Livros disponíveis
+        </p>
+
+    </div>
+
+
+</div>
+
+
+<section>
+
+
+    <div class="section-header">
+
+        <h2>
+            Projetos de Leitura
+        </h2>
+
+        <p>
+            Conheça algumas das atividades realizadas
+            pela biblioteca para incentivar o hábito
+            da leitura.
+        </p>
+
+    </div>
+
+
+    <div class="grid">
+
+
+        <div class="card">
+
+            <h3>
+                Clube do Livro
+            </h3>
+
+            <p>
+                Um espaço para os alunos discutirem
+                livros, compartilharem opiniões e
+                conhecerem diferentes obras literárias.
+            </p>
+
+
+            <button
+                class="btn"
+                onclick="document.getElementById('form-clube').scrollIntoView({behavior:'smooth'})">
+
+                Participar
+
+            </button>
+
+        </div>
+
+
+        <div class="card">
+
+            <h3>
+                Projetos de Leitura
+            </h3>
+
+            <p>
+                Atividades desenvolvidas para estimular
+                a leitura e aproximar os estudantes
+                da literatura.
+            </p>
+
+
+            <a
+                href="#projetos"
+                class="btn">
+
+                Ver projetos
+
+            </a>
+
+        </div>
+
+
+        <div class="card">
+
+            <h3>
+                Indicações de Livros
+            </h3>
+
+            <p>
+                Sugestões de obras organizadas de acordo
+                com diferentes idades, interesses e
+                gêneros literários.
+            </p>
+
+
+            <a
+                href="acervo.html"
+                class="btn">
+
+                Ver acervo
+
+            </a>
+
+        </div>
+
+
+        <div class="card">
+
+            <h3>
+                Exposições Temáticas
+            </h3>
+
+            <p>
+                Exposições especiais que apresentam
+                autores, obras e temas importantes
+                para incentivar a leitura.
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<section id="projetos">
+
+
+    <div class="section-header">
+
+        <h2>
+            Atividades de Leitura
+        </h2>
+
+        <p>
+            Confira algumas atividades que podem ser
+            realizadas pelos alunos.
+        </p>
+
+    </div>
+
+
+    <div class="grid">
+
+
+        <div class="card">
+
+            <h3>
+                Leitura Coletiva
+            </h3>
+
+            <p>
+                Os alunos realizam a leitura de uma
+                mesma obra e depois participam de uma
+                conversa sobre a história.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <h3>
+                Debate Literário
+            </h3>
+
+            <p>
+                Discussões sobre personagens,
+                acontecimentos, temas e mensagens
+                presentes nos livros.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <h3>
+                Reconto de Histórias
+            </h3>
+
+            <p>
+                Os participantes apresentam novamente
+                uma história utilizando suas próprias
+                palavras.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <h3>
+                Indicação Literária
+            </h3>
+
+            <p>
+                Os alunos podem recomendar livros
+                que consideram interessantes para
+                outros leitores.
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<section>
+
+
+    <div class="section-header">
+
+        <h2>
+            Indique um Livro
+        </h2>
+
+        <p>
+            Sugira uma obra que você gostaria de
+            encontrar no acervo da biblioteca.
+        </p>
+
+    </div>
+
+
+    <form
+        id="form-indicacao"
+        class="library-form">
+
+
+        <div class="form-group">
+
+            <label for="nome-indicacao">
+                Nome do aluno
+            </label>
+
+            <input
+                type="text"
+                id="nome-indicacao"
+                name="nome-indicacao"
+                placeholder="Digite seu nome"
+                required>
+
+        </div>
+
+
+        <div class="form-group">
+
+            <label for="livro-indicacao">
+                Nome do livro
+            </label>
+
+            <input
+                type="text"
+                id="livro-indicacao"
+                name="livro-indicacao"
+                placeholder="Digite o título do livro"
+                required>
+
+        </div>
+
+
+        <div class="form-group">
+
+            <label for="autor-indicacao">
+                Autor
+            </label>
+
+            <input
+                type="text"
+                id="autor-indicacao"
+                name="autor-indicacao"
+                placeholder="Digite o nome do autor"
+                required>
+
+        </div>
+
+
+        <button
+            type="submit"
+            class="btn">
+
+            Enviar indicação
+
+        </button>
+
+
+    </form>
+
+</section>
+
+
+<section>
+
+
+    <div class="section-header">
+
+        <h2>
+            Clube do Livro
+        </h2>
+
+        <p>
+            Participe das discussões e atividades
+            realizadas pelo Clube do Livro.
+        </p>
+
+    </div>
+
+
+    <form
+        id="form-clube"
+        class="library-form">
+
+
+        <div class="form-group">
+
+            <label for="nome-clube">
+                Nome do aluno
+            </label>
+
+            <input
+                type="text"
+                id="nome-clube"
+                name="nome-clube"
+                placeholder="Digite seu nome completo"
+                required>
+
+        </div>
+
+
+        <div class="form-group">
+
+            <label for="turma-clube">
+                Turma
+            </label>
+
+            <input
+                type="text"
+                id="turma-clube"
+                name="turma-clube"
+                placeholder="Digite sua turma"
+                required>
+
+        </div>
+
+
+        <div class="form-group">
+
+            <label for="genero-clube">
+                Gênero literário favorito
+            </label>
+
+            <input
+                type="text"
+                id="genero-clube"
+                name="genero-clube"
+                placeholder="Ex.: Ficção, aventura, romance"
+                required>
+
+        </div>
+
+
+        <button
+            type="submit"
+            class="btn">
+
+            Participar do Clube
+
+        </button>
+
+
+    </form>
+
+</section>
+
+
+<section>
+
+
+    <div class="section-header">
+
+        <h2>
+            Informações de Leitura
+        </h2>
+
+        <p>
+            Algumas orientações para aproveitar
+            melhor as atividades da biblioteca.
+        </p>
+
+    </div>
+
+
+    <div class="grid">
+
+
+        <div class="card">
+
+            <h3>
+                Escolha uma obra
+            </h3>
+
+            <p>
+                Escolha livros de acordo com seus
+                interesses e procure conhecer
+                diferentes gêneros literários.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <h3>
+                Compartilhe suas opiniões
+            </h3>
+
+            <p>
+                Converse com outros leitores e
+                compartilhe suas interpretações
+                sobre as obras.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <h3>
+                Cuide dos livros
+            </h3>
+
+            <p>
+                Os livros da biblioteca devem ser
+                conservados para que outros alunos
+                também possam utilizá-los.
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+</main>
+
+<footer>
+
+<p>
+    © 2026 EEPJAP
+</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

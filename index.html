@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca Arruda</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="container brand">
+        <img src="biblioArruda.png" alt="Banner Biblioteca Arruda">
+    </div>
+</header>
+
+<nav>
+    <div class="nav-inner">
+
+        <button
+            class="menu-toggle"
+            id="menu-toggle"
+            aria-expanded="false">
+            ☰
+        </button>
+
+
+        <div class="menu" id="main-menu">
+            <a href="index.html">Início</a>
+            <a href="acervo.html">Acervo</a>
+            <a href="servico.html">Serviços</a>
+        </div>
+
+        <button id="tema-btn">Tema</button>
+
+    </div>
+</nav>
+
+<main class="container">
+
+    <!-- Estatísticas -->
+    <div class="stats">
+
+        <div class="stat-card">
+            <h3>20</h3>
+            <p>Livros Disponíveis</p>
+        </div>
+
+        <div class="stat-card">
+            <h3>0</h3>
+            <p>Empréstimos</p>
+        </div>
+
+    </div>
+
+    <!-- Livros em destaque -->
+    <section>
+
+        <h2>Em Alta</h2>
+
+        <div class="livros-grid">
+
+            <div class="livro-card">
+
+                <div class="book-cover">
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMt76j895jT-kC3Kdtqr9kqqfUuXa9z8rQNZuJt3aUrw&s=10"
+                        alt="Dom Casmurro">
+                </div>
+
+                <h3>Dom Casmurro</h3>
+
+                <p>Machado de Assis</p>
+
+            </div>
+
+
+            <div class="livro-card">
+
+                <div class="book-cover">
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLTEyytvILEUBGYuAqr8Wg9MrZHeJqKqQFOQswsAsFNg&s=10"
+                        alt="Inferno">
+                </div>
+
+                <h3>Inferno</h3>
+
+                <p>Dan Brown</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section>
+
+        <h2>Avisos da Biblioteca</h2>
+
+        <div class="grid">
+
+            <div class="card">
+                <h3>Feira do Livro</h3>
+                <p>Agosto de 2026</p>
+            </div>
+
+            <div class="card">
+                <h3>Novos Títulos</h3>
+                <p>Livros de Tecnologia disponíveis.</p>
+            </div>
+
+            <div class="card">
+                <h3>Clube da Leitura</h3>
+                <p>Inscrições abertas para novos participantes.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+<footer>
+    <p>© 2026 EEPJAP</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

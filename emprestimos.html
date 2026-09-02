@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Empréstimos - Biblioteca Arruda</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css">
+
+</head>
+
+
+<body>
+
+
+<!-- MENU -->
+
+<nav>
+
+    <div class="nav-inner">
+
+        <button
+            class="menu-toggle"
+            id="menu-toggle"
+            aria-expanded="false">
+            ☰
+        </button>
+
+
+        <div
+            class="menu"
+            id="main-menu">
+
+            <a href="index.html">
+                Início
+            </a>
+
+            <a href="acervo.html">
+                Acervo
+            </a>
+
+            <a href="servico.html">
+                Serviços
+            </a>
+
+        </div>
+
+
+        <button id="tema-btn">
+            Tema
+        </button>
+
+    </div>
+
+</nav>
+
+
+
+<!-- CONTEÚDO PRINCIPAL -->
+
+<main class="container">
+
+
+    <!-- CABEÇALHO -->
+
+    <section class="page-intro">
+
+        <h1>
+            Empréstimos de Livros
+        </h1>
+
+        <p>
+            Gerencie empréstimos, reservas e renovações
+            de livros da Biblioteca Arruda.
+        </p>
+
+    </section>
+
+
+
+    <!-- ESTATÍSTICAS -->
+
+    <div class="stats">
+
+        <div class="stat-card">
+
+            <h3>
+                20
+            </h3>
+
+            <p>
+                Livros disponíveis
+            </p>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <h3>
+                0
+            </h3>
+
+            <p>
+                Livros emprestados
+            </p>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <h3>
+                0
+            </h3>
+
+            <p>
+                Reservas realizadas
+            </p>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- NOVO EMPRÉSTIMO -->
+
+    <section>
+
+        <div class="section-header">
+
+            <h2>
+                Novo Empréstimo
+            </h2>
+
+            <p>
+                Preencha os dados para registrar
+                um novo empréstimo.
+            </p>
+
+        </div>
+
+
+        <form
+            id="form-emprestimo"
+            class="library-form">
+
+
+            <div class="form-group">
+
+                <label for="aluno">
+                    Nome do aluno
+                </label>
+
+                <input
+                    type="text"
+                    id="aluno"
+                    name="aluno"
+                    placeholder="Digite o nome completo"
+                    required>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="livro">
+                    Livro
+                </label>
+
+                <input
+                    type="text"
+                    id="livro"
+                    name="livro"
+                    placeholder="Digite o título do livro"
+                    required>
+
+            </div>
+
+
+            <div class="form-row">
+
+                <div class="form-group">
+
+                    <label for="data-emprestimo">
+                        Data do empréstimo
+                    </label>
+
+                    <input
+                        type="date"
+                        id="data-emprestimo"
+                        name="data-emprestimo"
+                        required>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="data-devolucao">
+                        Data prevista para devolução
+                    </label>
+
+                    <input
+                        type="date"
+                        id="data-devolucao"
+                        name="data-devolucao"
+                        required>
+
+                </div>
+
+            </div>
+
+
+            <button
+                type="submit"
+                class="btn">
+
+                Registrar empréstimo
+
+            </button>
+
+
+        </form>
+
+    </section>
+
+
+
+    <!-- RESERVA -->
+
+    <section>
+
+        <div class="section-header">
+
+            <h2>
+                Reserva de Livro
+            </h2>
+
+            <p>
+                Reserve um livro que esteja
+                temporariamente indisponível.
+            </p>
+
+        </div>
+
+
+        <form
+            id="form-reserva"
+            class="library-form">
+
+
+            <div class="form-group">
+
+                <label for="nome-reserva">
+                    Nome do aluno
+                </label>
+
+                <input
+                    type="text"
+                    id="nome-reserva"
+                    name="nome-reserva"
+                    placeholder="Digite o nome completo"
+                    required>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="livro-reserva">
+                    Livro desejado
+                </label>
+
+                <input
+                    type="text"
+                    id="livro-reserva"
+                    name="livro-reserva"
+                    placeholder="Digite o título do livro"
+                    required>
+
+            </div>
+
+
+            <button
+                type="submit"
+                class="btn">
+
+                Solicitar reserva
+
+            </button>
+
+
+        </form>
+
+    </section>
+
+
+
+    <!-- RENOVAÇÃO -->
+
+    <section>
+
+        <div class="section-header">
+
+            <h2>
+                Renovação de Empréstimo
+            </h2>
+
+            <p>
+                Solicite uma nova data para devolução
+                de um livro emprestado.
+            </p>
+
+        </div>
+
+
+        <form
+            id="form-renovacao"
+            class="library-form">
+
+
+            <div class="form-group">
+
+                <label for="aluno-renovacao">
+                    Nome do aluno
+                </label>
+
+                <input
+                    type="text"
+                    id="aluno-renovacao"
+                    name="aluno-renovacao"
+                    placeholder="Digite o nome completo"
+                    required>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="livro-renovacao">
+                    Livro emprestado
+                </label>
+
+                <input
+                    type="text"
+                    id="livro-renovacao"
+                    name="livro-renovacao"
+                    placeholder="Digite o título do livro"
+                    required>
+
+            </div>
+
+
+            <button
+                type="submit"
+                class="btn">
+
+                Solicitar renovação
+
+            </button>
+
+
+        </form>
+
+    </section>
+
+
+
+    <!-- REGRAS -->
+
+    <section>
+
+        <div class="section-header">
+
+            <h2>
+                Regras de Empréstimo
+            </h2>
+
+            <p>
+                Informações importantes para utilização
+                dos serviços da biblioteca.
+            </p>
+
+        </div>
+
+
+        <div class="grid">
+
+
+            <div class="card">
+
+                <h3>
+                    Prazo de devolução
+                </h3>
+
+                <p>
+                    O livro deve ser devolvido dentro
+                    do prazo estabelecido pela biblioteca.
+                </p>
+
+            </div>
+
+
+
+            <div class="card">
+
+                <h3>
+                    Conservação dos livros
+                </h3>
+
+                <p>
+                    Os exemplares devem ser devolvidos
+                    em boas condições de conservação.
+                </p>
+
+            </div>
+
+
+
+            <div class="card">
+
+                <h3>
+                    Renovação
+                </h3>
+
+                <p>
+                    A renovação poderá ser solicitada
+                    enquanto o empréstimo estiver dentro
+                    das condições estabelecidas.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+</main>
+
+
+
+<!-- RODAPÉ -->
+
+<footer>
+
+    <p>
+        © 2026 EEPJAP
+    </p>
+
+</footer>
+
+
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
