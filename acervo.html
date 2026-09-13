@@ -26,41 +26,41 @@
             <a href="servico.html">Serviços</a>
         </div>
 
-        <button id="tema-btn">Tema</button>
+        <button id="tema-btn"> 🌙 </button>
 
     </div>
 </nav>
 
 <main class="container">
 
-    <section>
+        <section>
 
-        <h1>Acervo da Biblioteca</h1>
+            <h1>Acervo da Biblioteca</h1>
 
-        <p>
-            Consulte os livros disponíveis em nosso catálogo.
-        </p>
+            <p>
+                Consulte os livros disponíveis em nosso catálogo.
+            </p>
 
-    </section>
+        </section>
 
-    <div class="stats">
+        <div class="stats">
 
-        <div class="stat-card">
-            <h3>0</h3>
-            <p>Livros cadastrados</p>
+            <div class="stat-card">
+                <h3>200</h3>
+                <p>Livros cadastrados</p>
+            </div>
+
+            <div class="stat-card">
+                <h3>157</h3>
+                <p>Disponíveis</p>
+            </div>
+
+            <div class="stat-card">
+                <h3>043</h3>
+                <p>Emprestados</p>
+            </div>
+
         </div>
-
-        <div class="stat-card">
-            <h3>0</h3>
-            <p>Disponíveis</p>
-        </div>
-
-        <div class="stat-card">
-            <h3>0</h3>
-            <p>Emprestados</p>
-        </div>
-
-    </div>
 
     <section>
 
@@ -69,96 +69,2234 @@
         <input
             type="text"
             id="search"
-            placeholder="Digite o título ou autor..."
-            style="
-                width:100%;
-                padding:12px;
-                border-radius:8px;
-                border:1px solid #ccc;
-                margin-top:10px;
-            ">
+            class="search-box"
+            placeholder="Digite o título ou autor...">
 
     </section>
 
-    <div class="filters">
+        <div class="filters">
 
-        <button class="filter-btn active">Todos</button>
-        <button class="filter-btn">Ficção</button>
-        <button class="filter-btn">Tecnologia</button>
-        <button class="filter-btn">História</button>
-        <button class="filter-btn">Disponíveis</button>
-
-    </div>
-
-    <div class="books-grid">
-
-        <!-- Livro 1 -->
-        <div
-            class="book-card"
-            data-category="ficção"
-            data-status="disponivel">
-
-            <div class="book-cover">
-
-                <img
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLTEyytvILEUBGYuAqr8Wg9MrZHeJqKqQFOQswsAsFNg&s=10"
-                    alt="Inferno - Dan Brown">
-
-            </div>
-
-            <div class="book-info">
-
-                <div class="book-title">
-                    Inferno
-                </div>
-
-                <div class="book-author">
-                    Dan Brown
-                </div>
-
-                <span class="book-status available">
-                    Disponível
-                </span>
-
-            </div>
+            <button class="filter-btn active">Todos</button>
+            <button class="filter-btn">Ficção</button>
+            <button class="filter-btn">Tecnologia</button>
+            <button class="filter-btn">História</button>
+            <button class="filter-btn">Ciências</button>
+            <button class="filter-btn">Fantasia</button>
+            <button class="filter-btn">Disponíveis</button>
 
         </div>
 
+        <div class="books-grid">
 
-        <!-- Livro 2 -->
-        <div
-            class="book-card"
-            data-category="ficção"
-            data-status="disponivel">
+                <!-- ================= FICÇÃO ================= -->
 
-            <div class="book-cover">
-
-                <img
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtGfIz-vAOEn2hX1eUSRGCTCUFXhlYvuMGBON_OlT_Rg&s=10"
-                    alt="A Cinco Passos de Você">
-
-            </div>
-
-            <div class="book-info">
-
-                <div class="book-title">
-                    A Cinco Passos de Você
-                </div>
-
-                <div class="book-author">
-                    Rachael Lippincott
-                </div>
-
-                <span class="book-status available">
-                    Disponível
-                </span>
-
-            </div>
-
+    <div class="book-card", data-category="ficção", data-status="disponivel">
+        <div class="book-cover">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLTEyytvILEUBGYuAqr8Wg9MrZHeJqKqQFOQswsAsFNg&s=10", alt="Inferno - Dan Brown">
         </div>
-
+        <div class="book-info">
+            <div class="book-title">Inferno</div>
+            <div class="book-author">Dan Brown</div>
+            <span class="book-status available">Disponível</span>
+        </div>
     </div>
 
+    <div class="book-card", data-category="ficção", data-status="disponivel">
+        <div class="book-cover">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtGfIz-vAOEn2hX1eUSRGCTCUFXhlYvuMGBON_OlT_Rg&s=10", alt="A Cinco Passos de Você - Rachael Lippincott">
+        </div>
+        <div class="book-info">
+            <div class="book-title">A Cinco Passos de Você</div>
+            <div class="book-author">Rachael Lippincott</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="ficção", data-status="emprestado">
+        <div class="book-cover">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMt76j895jT-kC3Kdtqr9kqqfUuXa9z8rQNZuJt3aUrw&s=10", alt="Dom Casmurro - Machado de Assis">
+        </div>
+        <div class="book-info">
+            <div class="book-title">Dom Casmurro</div>
+            <div class="book-author">Machado de Assis</div>
+            <span class="book-status borrowed">Indisponivel</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="ficção", data-status="disponivel">
+        <div class="book-cover">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5sM-joNmcoNTUz-KN9Cmp5IJjcRzCX_STYWXRIpD1aA&s=10", alt="Memórias Póstumas de Brás Cubas - Machado de Assis">
+        </div>
+        <div class="book-info">
+            <div class="book-title">Memórias Póstumas de Brás Cubas</div>
+            <div class="book-author">Machado de Assis</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="ficção", data-status="emprestado">
+        <div class="book-cover">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4xS6zknp7ZYhvCt20Qkrcp0ZxAYw293VYWfvo_Vk3aQ&s=10", alt="O Cortiço - Aluísio Azevedo">
+        </div>
+        <div class="book-info">
+            <div class="book-title">O Cortiço</div>
+            <div class="book-author">Aluísio Azevedo</div>
+            <span class="book-status borrowed">Indisponivel</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="ficção", data-status="emprestado">
+        <div class="book-cover">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHZBNE1EVcshYKdUWR3gsqgXjH0W1_bRbvpT6U8XVSmQ&s=10", alt="Capitães da Areia - Jorge Amado">
+        </div>
+        <div class="book-info">
+            <div class="book-title">Capitães da Areia</div>
+            <div class="book-author">Jorge Amado</div>
+            <span class="book-status borrowed">Indisponivel</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="ficção", data-status="emprestado">
+        <div class="book-cover">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRt4qL8RJb0ObEruZ2gRdCg04kvLcSQuRAvtvAP1mZRmA&s", alt="Vidas Secas - Graciliano Ramos">
+        </div>
+        <div class="book-info">
+            <div class="book-title">Vidas Secas</div>
+            <div class="book-author">Graciliano Ramos</div>
+            <span class="book-status borrowed">Indisponivel</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="ficção", data-status="disponivel">
+        <div class="book-cover">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSdvFk3IOzYnuhb-FISjuMHh6CD56xFok8gnVhaOH3hw&s=10", alt="Grande Sertão: Veredas - Guimarães Rosa">
+        </div>
+        <div class="book-info">
+            <div class="book-title">Grande Sertão: Veredas</div>
+            <div class="book-author">Guimarães Rosa</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="ficção", data-status="emprestado">
+        <div class="book-cover">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDTaO-00Sf46qDWm2MbirrksJoP0An4DqFK1GhXzYANw&s=10", alt="A Hora da Estrela - Clarice Lispector">
+        </div>
+        <div class="book-info">
+            <div class="book-title">A Hora da Estrela</div>
+            <div class="book-author">Clarice Lispector</div>
+            <span class="book-status borrowed">Indisponivel</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="ficção", data-status="disponivel">
+        <div class="book-cover">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSe6UA6F55_sSnwqvVcpjeUyaSs593Fr35NPrMHKkKB6w&s=10", alt="O Alienista - Machado de Assis">
+        </div>
+        <div class="book-info">
+            <div class="book-title">O Alienista</div>
+            <div class="book-author">Machado de Assis</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="ficção", data-status="emprestado">
+        <div class="book-cover">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQ6GKhTSQwRYWJsp5Mn7LsT7AG5t4hx-7Gxt4patuyeg&s=10", alt="Iracema - José de Alencar">
+        </div>
+        <div class="book-info">
+            <div class="book-title">Iracema</div>
+            <div class="book-author">José de Alencar</div>
+            <span class="book-status borrowed">Indisponivel</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="ficção", data-status="disponivel">
+        <div class="book-cover">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTM5RGlMrnYIJbEHbu69k0jlZmR5i3Dha3jrlfwwmEKHg&s=10", alt="Senhora - José de Alencar">
+        </div>
+        <div class="book-info">
+            <div class="book-title">Senhora</div>
+            <div class="book-author">José de Alencar</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="ficção", data-status="disponivel">
+        <div class="book-cover">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5ukGhQfNNae9gzuA52byuzNgZxsnehtLOOGXznlaq_Q&s=10", alt="1984 - George Orwell">
+        </div>
+        <div class="book-info">
+            <div class="book-title">1984</div>
+            <div class="book-author">George Orwell</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="ficção", data-status="emprestado">
+        <div class="book-cover">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwR7C_ObRaku1Q99WwnDpT2SaQ8Npm1P5_CfWIEWksHA&s=10", alt="A Revolução dos Bichos - George Orwell">
+        </div>
+        <div class="book-info">
+            <div class="book-title">A Revolução dos Bichos</div>
+            <div class="book-author">George Orwell</div>
+            <span class="book-status borrowed">Indisponivel</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="ficção", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/grande-gatsby.jpg", alt="O Grande Gatsby - F. Scott Fitzgerald">
+        </div>
+        <div class="book-info">
+            <div class="book-title">O Grande Gatsby</div>
+            <div class="book-author">F. Scott Fitzgerald</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="ficção", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/crime-castigo.jpg", alt="Crime e Castigo - Fiódor Dostoiévski">
+        </div>
+        <div class="book-info">
+            <div class="book-title">Crime e Castigo</div>
+            <div class="book-author">Fiódor Dostoiévski</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="ficção", data-status="emprestado">
+        <div class="book-cover">
+            <img src="imagens/os-miseraveis.jpg", alt="Os Miseráveis - Victor Hugo">
+        </div>
+        <div class="book-info">
+            <div class="book-title">Os Miseráveis</div>
+            <div class="book-author">Victor Hugo</div>
+            <span class="book-status borrowed">Indisponivel</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="ficção", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/orgulho-preconceito.jpg", alt="Orgulho e Preconceito - Jane Austen">
+        </div>
+        <div class="book-info">
+            <div class="book-title">Orgulho e Preconceito</div>
+            <div class="book-author">Jane Austen</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="ficção", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/jane-eyre.jpg", alt="Jane Eyre - Charlotte Brontë">
+        </div>
+        <div class="book-info">
+            <div class="book-title">Jane Eyre</div>
+            <div class="book-author">Charlotte Brontë</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="ficção", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/morro-ventos-uivantes.jpg", alt="O Morro dos Ventos Uivantes - Emily Brontë">
+        </div>
+        <div class="book-info">
+            <div class="book-title">O Morro dos Ventos Uivantes</div>
+            <div class="book-author">Emily Brontë</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="ficção", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/apanhador-campo-centeio.jpg", alt="O Apanhador no Campo de Centeio - J. D. Salinger">
+        </div>
+        <div class="book-info">
+            <div class="book-title">O Apanhador no Campo de Centeio</div>
+            <div class="book-author">J. D. Salinger</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="ficção", data-status="emprestado">
+        <div class="book-cover">
+            <img src="imagens/admiravel-mundo-novo.jpg", alt="Admirável Mundo Novo - Aldous Huxley">
+        </div>
+        <div class="book-info">
+            <div class="book-title">Admirável Mundo Novo</div>
+            <div class="book-author">Aldous Huxley</div>
+            <span class="book-status borrowed">Indisponivel</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="ficção", data-status="emprestado">
+        <div class="book-cover">
+            <img src="imagens/fahrenheit-451.jpg", alt="Fahrenheit 451 - Ray Bradbury">
+        </div>
+        <div class="book-info">
+            <div class="book-title">Fahrenheit 451</div>
+            <div class="book-author">Ray Bradbury</div>
+            <span class="book-status borrowed">Indisponivel</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="ficção", data-status="emprestado">
+        <div class="book-cover">
+            <img src="imagens/metamorfose.jpg", alt="A Metamorfose - Franz Kafka">
+        </div>
+        <div class="book-info">
+            <div class="book-title">A Metamorfose</div>
+            <div class="book-author">Franz Kafka</div>
+            <span class="book-status borrowed">Indisponivel</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="ficção", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/o-processo.jpg", alt="O Processo - Franz Kafka">
+        </div>
+        <div class="book-info">
+            <div class="book-title">O Processo</div>
+            <div class="book-author">Franz Kafka</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="ficção", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/ensaio-cegueira.jpg", alt="Ensaio sobre a Cegueira - José Saramago">
+        </div>
+        <div class="book-info">
+            <div class="book-title">Ensaio sobre a Cegueira</div>
+            <div class="book-author">José Saramago</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="ficção", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/homem-duplicado.jpg", alt="O Homem Duplicado - José Saramago">
+        </div>
+        <div class="book-info">
+            <div class="book-title">O Homem Duplicado</div>
+            <div class="book-author">José Saramago</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="ficção", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/velho-e-o-mar.jpg", alt="O Velho e o Mar - Ernest Hemingway">
+        </div>
+        <div class="book-info">
+            <div class="book-title">O Velho e o Mar</div>
+            <div class="book-author">Ernest Hemingway</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="ficção", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/vinhas-da-ira.jpg", alt="As Vinhas da Ira - John Steinbeck">
+        </div>
+        <div class="book-info">
+            <div class="book-title">As Vinhas da Ira</div>
+            <div class="book-author">John Steinbeck</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="ficção", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/sol-para-todos.jpg", alt="O Sol é para Todos - Harper Lee">
+        </div>
+        <div class="book-info">
+            <div class="book-title">O Sol é para Todos</div>
+            <div class="book-author">Harper Lee</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="ficção", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/menina-roubava-livros.jpg", alt="A Menina que Roubava Livros - Markus Zusak">
+        </div>
+        <div class="book-info">
+            <div class="book-title">A Menina que Roubava Livros</div>
+            <div class="book-author">Markus Zusak</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="ficção", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/extraordinario.jpg", alt="Extraordinário - R. J. Palacio">
+        </div>
+        <div class="book-info">
+            <div class="book-title">Extraordinário</div>
+            <div class="book-author">R. J. Palacio</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="ficção", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/menino-pijama-listrado.jpg", alt="O Menino do Pijama Listrado - John Boyne">
+        </div>
+        <div class="book-info">
+            <div class="book-title">O Menino do Pijama Listrado</div>
+            <div class="book-author">John Boyne</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="ficção", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/culpa-estrelas.jpg", alt="A Culpa é das Estrelas - John Green">
+        </div>
+        <div class="book-info">
+            <div class="book-title">A Culpa é das Estrelas</div>
+            <div class="book-author">John Green</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="ficção", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/quem-e-voce-alasca.jpg", alt="Quem é Você, Alasca? - John Green">
+        </div>
+        <div class="book-info">
+            <div class="book-title">Quem é Você, Alasca?</div>
+            <div class="book-author">John Green</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="ficção", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/diario-anne-frank.jpg", alt="O Diário de Anne Frank - Anne Frank">
+        </div>
+        <div class="book-info">
+            <div class="book-title">O Diário de Anne Frank</div>
+            <div class="book-author">Anne Frank</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="ficção", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/biblioteca-meia-noite.jpg", alt="A Biblioteca da Meia-Noite - Matt Haig">
+        </div>
+        <div class="book-info">
+            <div class="book-title">A Biblioteca da Meia-Noite</div>
+            <div class="book-author">Matt Haig</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="ficção", data-status="emprestado">
+        <div class="book-cover">
+            <img src="imagens/cronicas-narnia.jpg", alt="As Crônicas de Nárnia - C. S. Lewis">
+        </div>
+        <div class="book-info">
+            <div class="book-title">As Crônicas de Nárnia</div>
+            <div class="book-author">C. S. Lewis</div>
+            <span class="book-status borrowed">Indisponivel</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="ficção", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/pequeno-principe.jpg", alt="O Pequeno Príncipe - Antoine de Saint-Exupéry">
+        </div>
+        <div class="book-info">
+            <div class="book-title">O Pequeno Príncipe</div>
+            <div class="book-author">Antoine de Saint-Exupéry</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="ficção", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/o-hobbit.jpg", alt="O Hobbit - J. R. R. Tolkien">
+        </div>
+        <div class="book-info">
+            <div class="book-title">O Hobbit</div>
+            <div class="book-author">J. R. R. Tolkien</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="ficção", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/sociedade-do-anel.jpg", alt="A Sociedade do Anel - J. R. R. Tolkien">
+        </div>
+        <div class="book-info">
+            <div class="book-title">A Sociedade do Anel</div>
+            <div class="book-author">J. R. R. Tolkien</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="ficção", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/codigo-da-vinci.jpg", alt="O Código Da Vinci - Dan Brown">
+        </div>
+        <div class="book-info">
+            <div class="book-title">O Código Da Vinci</div>
+            <div class="book-author">Dan Brown</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+        <!-- ================= TECNOLOGIA ================= -->
+
+    <div class="book-card", data-category="tecnologia", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/codigo-limpo.jpg", alt="Código Limpo - Robert C. Martin">
+        </div>
+        <div class="book-info">
+            <div class="book-title">Código Limpo</div>
+            <div class="book-author">Robert C. Martin</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="tecnologia", data-status="emprestado">
+        <div class="book-cover">
+            <img src="imagens/programador-pragmatico.jpg", alt="O Programador Pragmático - Andrew Hunt">
+        </div>
+        <div class="book-info">
+            <div class="book-title">O Programador Pragmático</div>
+            <div class="book-author">Andrew Hunt</div>
+            <span class="book-status borrowed">Indisponivel</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="tecnologia", data-status="emprestado">
+        <div class="book-cover">
+            <img src="imagens/entendendo-algoritmos.jpg", alt="Entendendo Algoritmos - Aditya Bhargava">
+        </div>
+        <div class="book-info">
+            <div class="book-title">Entendendo Algoritmos</div>
+            <div class="book-author">Aditya Bhargava</div>
+            <span class="book-status borrowed">Indisponivel</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="tecnologia", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/javascript-guia-definitivo.jpg", alt="JavaScript: O Guia Definitivo - David Flanagan">
+        </div>
+        <div class="book-info">
+            <div class="book-title">JavaScript: O Guia Definitivo</div>
+            <div class="book-author">David Flanagan</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="tecnologia", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/eloquent-javascript.jpg", alt="Eloquent JavaScript - Marijn Haverbeke">
+        </div>
+        <div class="book-info">
+            <div class="book-title">Eloquent JavaScript</div>
+            <div class="book-author">Marijn Haverbeke</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="tecnologia", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/html-css.jpg", alt="HTML e CSS - Jon Duckett">
+        </div>
+        <div class="book-info">
+            <div class="book-title">HTML e CSS</div>
+            <div class="book-author">Jon Duckett</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="tecnologia", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/javascript-jquery.jpg", alt="JavaScript e JQuery - Jon Duckett">
+        </div>
+        <div class="book-info">
+            <div class="book-title">JavaScript e JQuery</div>
+            <div class="book-author">Jon Duckett</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="tecnologia", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/introducao-ciencia-computacao.jpg", alt="Introdução à Ciência da Computação - Glenn Brookshear">
+        </div>
+        <div class="book-info">
+            <div class="book-title">Introdução à Ciência da Computação</div>
+            <div class="book-author">Glenn Brookshear</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="tecnologia", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/arquitetura-limpa.jpg", alt="Arquitetura Limpa - Robert C. Martin">
+        </div>
+        <div class="book-info">
+            <div class="book-title">Arquitetura Limpa</div>
+            <div class="book-author">Robert C. Martin</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="tecnologia", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/refatoracao.jpg", alt="Refatoração - Martin Fowler">
+        </div>
+        <div class="book-info">
+            <div class="book-title">Refatoração</div>
+            <div class="book-author">Martin Fowler</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="tecnologia", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/design-patterns.jpg", alt="Design Patterns - Erich Gamma">
+        </div>
+        <div class="book-info">
+            <div class="book-title">Design Patterns</div>
+            <div class="book-author">Erich Gamma</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="tecnologia", data-status="emprestado">
+        <div class="book-cover">
+            <img src="imagens/python-para-todos.jpg", alt="Python para Todos - Charles Severance">
+        </div>
+        <div class="book-info">
+            <div class="book-title">Python para Todos</div>
+            <div class="book-author">Charles Severance</div>
+            <span class="book-status borrowed">Indisponivel</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="tecnologia", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/aprendendo-python.jpg", alt="Aprendendo Python - Mark Lutz">
+        </div>
+        <div class="book-info">
+            <div class="book-title">Aprendendo Python</div>
+            <div class="book-author">Mark Lutz</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="tecnologia", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/automatize-python.jpg", alt="Automatize Tarefas Maçantes com Python - Al Sweigart">
+        </div>
+        <div class="book-info">
+            <div class="book-title">Automatize Tarefas Maçantes com Python</div>
+            <div class="book-author">Al Sweigart</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="tecnologia", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/redes-computadores.jpg", alt="Redes de Computadores - Andrew Tanenbaum">
+        </div>
+        <div class="book-info">
+            <div class="book-title">Redes de Computadores</div>
+            <div class="book-author">Andrew Tanenbaum</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="tecnologia", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/sistemas-operacionais.jpg", alt="Sistemas Operacionais Modernos - Andrew Tanenbaum">
+        </div>
+        <div class="book-info">
+            <div class="book-title">Sistemas Operacionais Modernos</div>
+            <div class="book-author">Andrew Tanenbaum</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="tecnologia", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/seguranca-informacao.jpg", alt="Segurança da Informação - CompTIA">
+        </div>
+        <div class="book-info">
+            <div class="book-title">Segurança da Informação</div>
+            <div class="book-author">CompTIA</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="tecnologia", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/hacking-etico.jpg", alt="Hacking Ético - Daniel G. Graham">
+        </div>
+        <div class="book-info">
+            <div class="book-title">Hacking Ético</div>
+            <div class="book-author">Daniel G. Graham</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="tecnologia", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/inteligencia-artificial.jpg", alt="Inteligência Artificial - Russell & Norvig">
+        </div>
+        <div class="book-info">
+            <div class="book-title">Inteligência Artificial</div>
+            <div class="book-author">Russell & Norvig</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="tecnologia", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/deep-learning.jpg", alt="Deep Learning - Ian Goodfellow">
+        </div>
+        <div class="book-info">
+            <div class="book-title">Deep Learning</div>
+            <div class="book-author">Ian Goodfellow</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="tecnologia", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/quarta-revolucao-industrial.jpg", alt="A Quarta Revolução Industrial - Klaus Schwab">
+        </div>
+        <div class="book-info">
+            <div class="book-title">A Quarta Revolução Industrial</div>
+            <div class="book-author">Klaus Schwab</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="tecnologia", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/vida-3.jpg", alt="Vida 3.0 - Max Tegmark">
+        </div>
+        <div class="book-info">
+            <div class="book-title">Vida 3.0</div>
+            <div class="book-author">Max Tegmark</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="tecnologia", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/steve-jobs.jpg", alt="Steve Jobs - Walter Isaacson">
+        </div>
+        <div class="book-info">
+            <div class="book-title">Steve Jobs</div>
+            <div class="book-author">Walter Isaacson</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="tecnologia", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/inovadores.jpg", alt="Os Inovadores - Walter Isaacson">
+        </div>
+        <div class="book-info">
+            <div class="book-title">Os Inovadores</div>
+            <div class="book-author">Walter Isaacson</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="tecnologia", data-status="emprestado">
+        <div class="book-cover">
+            <img src="imagens/mito-empreendedor.jpg", alt="O Mito do Empreendedor - Michael Gerber">
+        </div>
+        <div class="book-info">
+            <div class="book-title">O Mito do Empreendedor</div>
+            <div class="book-author">Michael Gerber</div>
+            <span class="book-status borrowed">Indisponivel</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="tecnologia", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/sprint.jpg", alt="Sprint - Jake Knapp">
+        </div>
+        <div class="book-info">
+            <div class="book-title">Sprint</div>
+            <div class="book-author">Jake Knapp</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="tecnologia", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/startup-enxuta.jpg", alt="Startup Enxuta - Eric Ries">
+        </div>
+        <div class="book-info">
+            <div class="book-title">Startup Enxuta</div>
+            <div class="book-author">Eric Ries</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="tecnologia", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/design-dia-dia.jpg", alt="Design do Dia a Dia - Don Norman">
+        </div>
+        <div class="book-info">
+            <div class="book-title">Design do Dia a Dia</div>
+            <div class="book-author">Don Norman</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="tecnologia", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/criptografia-aplicada.jpg", alt="Criptografia Aplicada - Bruce Schneier">
+        </div>
+        <div class="book-info">
+            <div class="book-title">Criptografia Aplicada</div>
+            <div class="book-author">Bruce Schneier</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="tecnologia", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/git-pro.jpg", alt="Git Pro - Scott Chacon">
+        </div>
+        <div class="book-info">
+            <div class="book-title">Git Pro</div>
+            <div class="book-author">Scott Chacon</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="tecnologia", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/aprendendo-sql.jpg", alt="Aprendendo SQL - Alan Beaulieu">
+        </div>
+        <div class="book-info">
+            <div class="book-title">Aprendendo SQL</div>
+            <div class="book-author">Alan Beaulieu</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="tecnologia", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/mongodb.jpg", alt="MongoDB - Kristina Chodorow">
+        </div>
+        <div class="book-info">
+            <div class="book-title">MongoDB</div>
+            <div class="book-author">Kristina Chodorow</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="tecnologia", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/docker-deep-dive.jpg", alt="Docker Deep Dive - Nigel Poulton">
+        </div>
+        <div class="book-info">
+            <div class="book-title">Docker Deep Dive</div>
+            <div class="book-author">Nigel Poulton</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="tecnologia", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/kubernetes.jpg", alt="Kubernetes Up & Running - Brendan Burns">
+        </div>
+        <div class="book-info">
+            <div class="book-title">Kubernetes Up & Running</div>
+            <div class="book-author">Brendan Burns</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="tecnologia", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/engenharia-software-moderna.jpg", alt="Engenharia de Software Moderna - Marco Tulio Valente">
+        </div>
+        <div class="book-info">
+            <div class="book-title">Engenharia de Software Moderna</div>
+            <div class="book-author">Marco Tulio Valente</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="tecnologia", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/linguagem-c.jpg", alt="Linguagem C - Kernighan & Ritchie">
+        </div>
+        <div class="book-info">
+            <div class="book-title">Linguagem C</div>
+            <div class="book-author">Kernighan & Ritchie</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="tecnologia", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/java-como-programar.jpg", alt="Java: Como Programar - Deitel & Deitel">
+        </div>
+        <div class="book-info">
+            <div class="book-title">Java: Como Programar</div>
+            <div class="book-author">Deitel & Deitel</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="tecnologia", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/csharp-dotnet.jpg", alt="C# e .NET - Mark J. Price">
+        </div>
+        <div class="book-info">
+            <div class="book-title">C# e .NET</div>
+            <div class="book-author">Mark J. Price</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="tecnologia", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/data-science-negocios.jpg", alt="Data Science para Negócios - Foster Provost">
+        </div>
+        <div class="book-info">
+            <div class="book-title">Data Science para Negócios</div>
+            <div class="book-author">Foster Provost</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="tecnologia", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/computacao-nuvem.jpg", alt="Computação em Nuvem - Thomas Erl">
+        </div>
+        <div class="book-info">
+            <div class="book-title">Computação em Nuvem</div>
+            <div class="book-author">Thomas Erl</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+        <!-- ================= HISTÓRIA  ================= -->
+
+    <div class="book-card", data-category="história", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/raizes-do-brasil.jpg", alt="Raízes do Brasil - Sérgio Buarque de Holanda">
+        </div>
+        <div class="book-info">
+            <div class="book-title">Raízes do Brasil</div>
+            <div class="book-author">Sérgio Buarque de Holanda</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="história", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/casa-grande-senzala.jpg", alt="Casa-Grande & Senzala - Gilberto Freyre">
+        </div>
+        <div class="book-info">
+            <div class="book-title">Casa-Grande & Senzala</div>
+            <div class="book-author">Gilberto Freyre</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="história", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/1808.jpg", alt="1808 - Laurentino Gomes">
+        </div>
+        <div class="book-info">
+            <div class="book-title">1808</div>
+            <div class="book-author">Laurentino Gomes</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="história", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/1822.jpg", alt="1822 - Laurentino Gomes">
+        </div>
+        <div class="book-info">
+            <div class="book-title">1822</div>
+            <div class="book-author">Laurentino Gomes</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="história", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/1889.jpg", alt="1889 - Laurentino Gomes">
+        </div>
+        <div class="book-info">
+            <div class="book-title">1889</div>
+            <div class="book-author">Laurentino Gomes</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="história", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/historia-do-brasil.jpg", alt="História do Brasil - Boris Fausto">
+        </div>
+        <div class="book-info">
+            <div class="book-title">História do Brasil</div>
+            <div class="book-author">Boris Fausto</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="história", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/brasil-uma-biografia.jpg", alt="Brasil: Uma Biografia - Lilia Schwarcz">
+        </div>
+        <div class="book-info">
+            <div class="book-title">Brasil: Uma Biografia</div>
+            <div class="book-author">Lilia Schwarcz</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="história", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/escravidao.jpg", alt="Escravidão - Laurentino Gomes">
+        </div>
+        <div class="book-info">
+            <div class="book-title">Escravidão</div>
+            <div class="book-author">Laurentino Gomes</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="história", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/getulio.jpg", alt="Getúlio - Lira Neto">
+        </div>
+        <div class="book-info">
+            <div class="book-title">Getúlio</div>
+            <div class="book-author">Lira Neto</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="história", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/ditadura-envergonhada.jpg", alt="A Ditadura Envergonhada - Elio Gaspari">
+        </div>
+        <div class="book-info">
+            <div class="book-title">A Ditadura Envergonhada</div>
+            <div class="book-author">Elio Gaspari</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="história", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/era-dos-extremos.jpg", alt="A Era dos Extremos - Eric Hobsbawm">
+        </div>
+        <div class="book-info">
+            <div class="book-title">A Era dos Extremos</div>
+            <div class="book-author">Eric Hobsbawm</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="história", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/era-das-revolucoes.jpg", alt="A Era das Revoluções - Eric Hobsbawm">
+        </div>
+        <div class="book-info">
+            <div class="book-title">A Era das Revoluções</div>
+            <div class="book-author">Eric Hobsbawm</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="história", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/sapiens.jpg", alt="Sapiens - Yuval Noah Harari">
+        </div>
+        <div class="book-info">
+            <div class="book-title">Sapiens</div>
+            <div class="book-author">Yuval Noah Harari</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="história", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/homo-deus.jpg", alt="Homo Deus - Yuval Noah Harari">
+        </div>
+        <div class="book-info">
+            <div class="book-title">Homo Deus</div>
+            <div class="book-author">Yuval Noah Harari</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="história", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/armas-germes-aco.jpg", alt="Armas, Germes e Aço - Jared Diamond">
+        </div>
+        <div class="book-info">
+            <div class="book-title">Armas, Germes e Aço</div>
+            <div class="book-author">Jared Diamond</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="história", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/mundo-de-sofia.jpg", alt="O Mundo de Sofia - Jostein Gaarder">
+        </div>
+        <div class="book-info">
+            <div class="book-title">O Mundo de Sofia</div>
+            <div class="book-author">Jostein Gaarder</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="história", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/napoleao.jpg", alt="Napoleão - Andrew Roberts">
+        </div>
+        <div class="book-info">
+            <div class="book-title">Napoleão</div>
+            <div class="book-author">Andrew Roberts</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="história", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/alexandre-o-grande.jpg", alt="Alexandre, o Grande - Philip Freeman">
+        </div>
+        <div class="book-info">
+            <div class="book-title">Alexandre, o Grande</div>
+            <div class="book-author">Philip Freeman</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="história", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/julio-cesar.jpg", alt="Júlio César - Adrian Goldsworthy">
+        </div>
+        <div class="book-info">
+            <div class="book-title">Júlio César</div>
+            <div class="book-author">Adrian Goldsworthy</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="história", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/spqr.jpg", alt="SPQR - Mary Beard">
+        </div>
+        <div class="book-info">
+            <div class="book-title">SPQR</div>
+            <div class="book-author">Mary Beard</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="história", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/segunda-guerra.jpg", alt="A Segunda Guerra Mundial - Antony Beevor">
+        </div>
+        <div class="book-info">
+            <div class="book-title">A Segunda Guerra Mundial</div>
+            <div class="book-author">Antony Beevor</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="história", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/stalingrado.jpg", alt="Stalingrado - Antony Beevor">
+        </div>
+        <div class="book-info">
+            <div class="book-title">Stalingrado</div>
+            <div class="book-author">Antony Beevor</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="história", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/d-day.jpg", alt="D-Day - Antony Beevor">
+        </div>
+        <div class="book-info">
+            <div class="book-title">D-Day</div>
+            <div class="book-author">Antony Beevor</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="história", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/primeira-guerra.jpg", alt="A Primeira Guerra Mundial - Martin Gilbert">
+        </div>
+        <div class="book-info">
+            <div class="book-title">A Primeira Guerra Mundial</div>
+            <div class="book-author">Martin Gilbert</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="história", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/hitler.jpg", alt="Hitler - Ian Kershaw">
+        </div>
+        <div class="book-info">
+            <div class="book-title">Hitler</div>
+            <div class="book-author">Ian Kershaw</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="história", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/churchill.jpg", alt="Churchill - Andrew Roberts">
+        </div>
+        <div class="book-info">
+            <div class="book-title">Churchill</div>
+            <div class="book-author">Andrew Roberts</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="história", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/historia-da-arte.jpg", alt="A História da Arte - E. H. Gombrich">
+        </div>
+        <div class="book-info">
+            <div class="book-title">A História da Arte</div>
+            <div class="book-author">E. H. Gombrich</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="história", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/civilizacao.jpg", alt="Civilização - Niall Ferguson">
+        </div>
+        <div class="book-info">
+            <div class="book-title">Civilização</div>
+            <div class="book-author">Niall Ferguson</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="história", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/america-latina.jpg", alt="História da América Latina - Leslie Bethell">
+        </div>
+        <div class="book-info">
+            <div class="book-title">História da América Latina</div>
+            <div class="book-author">Leslie Bethell</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="história", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/historia-africa.jpg", alt="História da África - Alberto da Costa e Silva">
+        </div>
+        <div class="book-info">
+            <div class="book-title">História da África</div>
+            <div class="book-author">Alberto da Costa e Silva</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="história", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/atenas.jpg", alt="Atenas - Paul Cartledge">
+        </div>
+        <div class="book-info">
+            <div class="book-title">Atenas</div>
+            <div class="book-author">Paul Cartledge</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="história", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/esparta.jpg", alt="Esparta - Paul Cartledge">
+        </div>
+        <div class="book-info">
+            <div class="book-title">Esparta</div>
+            <div class="book-author">Paul Cartledge</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="história", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/idade-media.jpg", alt="A Idade Média - Jacques Le Goff">
+        </div>
+        <div class="book-info">
+            <div class="book-title">A Idade Média</div>
+            <div class="book-author">Jacques Le Goff</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="história", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/renascimento.jpg", alt="Renascimento - Peter Burke">
+        </div>
+        <div class="book-info">
+            <div class="book-title">Renascimento</div>
+            <div class="book-author">Peter Burke</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="história", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/revolucao-francesa.jpg", alt="A Revolução Francesa - Simon Schama">
+        </div>
+        <div class="book-info">
+            <div class="book-title">A Revolução Francesa</div>
+            <div class="book-author">Simon Schama</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="história", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/mundo-100-objetos.jpg", alt="História do Mundo em 100 Objetos - Neil MacGregor">
+        </div>
+        <div class="book-info">
+            <div class="book-title">História do Mundo em 100 Objetos</div>
+            <div class="book-author">Neil MacGregor</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="história", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/breve-historia-mundo.jpg", alt="Uma Breve História do Mundo - Geoffrey Blainey">
+        </div>
+        <div class="book-info">
+            <div class="book-title">Uma Breve História do Mundo</div>
+            <div class="book-author">Geoffrey Blainey</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="história", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/os-sertoes.jpg", alt="Os Sertões - Euclides da Cunha">
+        </div>
+        <div class="book-info">
+            <div class="book-title">Os Sertões</div>
+            <div class="book-author">Euclides da Cunha</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="história", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/canudos.jpg", alt="Canudos - Lira Neto">
+        </div>
+        <div class="book-info">
+            <div class="book-title">Canudos</div>
+            <div class="book-author">Lira Neto</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <!-- ================= CIÊNCIAS ================= -->
+
+    <div class="book-card", data-category="ciências", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/breve-historia-tempo.jpg", alt="Uma Breve História do Tempo - Stephen Hawking">
+        </div>
+        <div class="book-info">
+            <div class="book-title">Uma Breve História do Tempo</div>
+            <div class="book-author">Stephen Hawking</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="ciências", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/universo-casca-noz.jpg", alt="O Universo numa Casca de Noz - Stephen Hawking">
+        </div>
+        <div class="book-info">
+            <div class="book-title">O Universo numa Casca de Noz</div>
+            <div class="book-author">Stephen Hawking</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="ciências", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/cosmos.jpg", alt="Cosmos - Carl Sagan">
+        </div>
+        <div class="book-info">
+            <div class="book-title">Cosmos</div>
+            <div class="book-author">Carl Sagan</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="ciências", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/mundo-assombrado.jpg", alt="O Mundo Assombrado pelos Demônios - Carl Sagan">
+        </div>
+        <div class="book-info">
+            <div class="book-title">O Mundo Assombrado pelos Demônios</div>
+            <div class="book-author">Carl Sagan</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="ciências", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/palido-ponto-azul.jpg", alt="Pálido Ponto Azul - Carl Sagan">
+        </div>
+        <div class="book-info">
+            <div class="book-title">Pálido Ponto Azul</div>
+            <div class="book-author">Carl Sagan</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="ciências", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/origem-especies.jpg", alt="A Origem das Espécies - Charles Darwin">
+        </div>
+        <div class="book-info">
+            <div class="book-title">A Origem das Espécies</div>
+            <div class="book-author">Charles Darwin</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="ciências", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/gene-egoista.jpg", alt="O Gene Egoísta - Richard Dawkins">
+        </div>
+        <div class="book-info">
+            <div class="book-title">O Gene Egoísta</div>
+            <div class="book-author">Richard Dawkins</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="ciências", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/maior-espetaculo.jpg", alt="A Maior Espetáculo da Terra - Richard Dawkins">
+        </div>
+        <div class="book-info">
+            <div class="book-title">A Maior Espetáculo da Terra</div>
+            <div class="book-author">Richard Dawkins</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="ciências", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/andar-bebado.jpg", alt="O Andar do Bêbado - Leonard Mlodinow">
+        </div>
+        <div class="book-info">
+            <div class="book-title">O Andar do Bêbado</div>
+            <div class="book-author">Leonard Mlodinow</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="ciências", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/subliminar.jpg", alt="Subliminar - Leonard Mlodinow">
+        </div>
+        <div class="book-info">
+            <div class="book-title">Subliminar</div>
+            <div class="book-author">Leonard Mlodinow</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="ciências", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/corpo-humano.jpg", alt="O Corpo Humano - Bill Bryson">
+        </div>
+        <div class="book-info">
+            <div class="book-title">O Corpo Humano</div>
+            <div class="book-author">Bill Bryson</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="ciências", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/breve-historia-quase-tudo.jpg", alt="Breve História de Quase Tudo - Bill Bryson">
+        </div>
+        <div class="book-info">
+            <div class="book-title">Breve História de Quase Tudo</div>
+            <div class="book-author">Bill Bryson</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="ciências", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/astrofisica-apressados.jpg", alt="Astrofísica para Apressados - Neil deGrasse Tyson">
+        </div>
+        <div class="book-info">
+            <div class="book-title">Astrofísica para Apressados</div>
+            <div class="book-author">Neil deGrasse Tyson</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="ciências", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/vida-secreta-arvores.jpg", alt="A Vida Secreta das Árvores - Peter Wohlleben">
+        </div>
+        <div class="book-info">
+            <div class="book-title">A Vida Secreta das Árvores</div>
+            <div class="book-author">Peter Wohlleben</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="ciências", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/o-gene.jpg", alt="O Gene - Siddhartha Mukherjee">
+        </div>
+        <div class="book-info">
+            <div class="book-title">O Gene</div>
+            <div class="book-author">Siddhartha Mukherjee</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="ciências", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/imperador-males.jpg", alt="O Imperador de Todos os Males - Siddhartha Mukherjee">
+        </div>
+        <div class="book-info">
+            <div class="book-title">O Imperador de Todos os Males</div>
+            <div class="book-author">Siddhartha Mukherjee</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="ciências", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/livro-fisica.jpg", alt="O Livro da Física - Clifford Pickover">
+        </div>
+        <div class="book-info">
+            <div class="book-title">O Livro da Física</div>
+            <div class="book-author">Clifford Pickover</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="ciências", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/livro-quimica.jpg", alt="O Livro da Química - DK">
+        </div>
+        <div class="book-info">
+            <div class="book-title">O Livro da Química</div>
+            <div class="book-author">DK</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="ciências", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/livro-biologia.jpg", alt="O Livro da Biologia - DK">
+        </div>
+        <div class="book-info">
+            <div class="book-title">O Livro da Biologia</div>
+            <div class="book-author">DK</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="ciências", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/livro-matematica.jpg", alt="O Livro da Matemática - DK">
+        </div>
+        <div class="book-info">
+            <div class="book-title">O Livro da Matemática</div>
+            <div class="book-author">DK</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="ciências", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/matematica-divertida.jpg", alt="Matemática Divertida - Malba Tahan">
+        </div>
+        <div class="book-info">
+            <div class="book-title">Matemática Divertida</div>
+            <div class="book-author">Malba Tahan</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="ciências", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/homem-que-calculava.jpg", alt="O Homem que Calculava - Malba Tahan">
+        </div>
+        <div class="book-info">
+            <div class="book-title">O Homem que Calculava</div>
+            <div class="book-author">Malba Tahan</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="ciências", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/fisica-futuro.jpg", alt="A Física do Futuro - Michio Kaku">
+        </div>
+        <div class="book-info">
+            <div class="book-title">A Física do Futuro</div>
+            <div class="book-author">Michio Kaku</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="ciências", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/futuro-mente.jpg", alt="O Futuro da Mente - Michio Kaku">
+        </div>
+        <div class="book-info">
+            <div class="book-title">O Futuro da Mente</div>
+            <div class="book-author">Michio Kaku</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="ciências", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/ordem-tempo.jpg", alt="A Ordem do Tempo - Carlo Rovelli">
+        </div>
+        <div class="book-info">
+            <div class="book-title">A Ordem do Tempo</div>
+            <div class="book-author">Carlo Rovelli</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="ciências", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/sete-licoes-fisica.jpg", alt="Sete Breves Lições de Física - Carlo Rovelli">
+        </div>
+        <div class="book-info">
+            <div class="book-title">Sete Breves Lições de Física</div>
+            <div class="book-author">Carlo Rovelli</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="ciências", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/equacao-deus.jpg", alt="A Equação de Deus - Michio Kaku">
+        </div>
+        <div class="book-info">
+            <div class="book-title">A Equação de Deus</div>
+            <div class="book-author">Michio Kaku</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="ciências", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/genoma.jpg", alt="Genoma - Matt Ridley">
+        </div>
+        <div class="book-info">
+            <div class="book-title">Genoma</div>
+            <div class="book-author">Matt Ridley</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="ciências", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/porque-dormimos.jpg", alt="Por Que Dormimos - Matthew Walker">
+        </div>
+        <div class="book-info">
+            <div class="book-title">Por Que Dormimos</div>
+            <div class="book-author">Matthew Walker</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="ciências", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/respire.jpg", alt="Respire - James Nestor">
+        </div>
+        <div class="book-info">
+            <div class="book-title">Respire</div>
+            <div class="book-author">James Nestor</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="ciências", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/sexta-extincao.jpg", alt="A Sexta Extinção - Elizabeth Kolbert">
+        </div>
+        <div class="book-info">
+            <div class="book-title">A Sexta Extinção</div>
+            <div class="book-author">Elizabeth Kolbert</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="ciências", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/primavera-silenciosa.jpg", alt="Primavera Silenciosa - Rachel Carson">
+        </div>
+        <div class="book-info">
+            <div class="book-title">Primavera Silenciosa</div>
+            <div class="book-author">Rachel Carson</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="ciências", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/livro-astronomia.jpg", alt="O Livro da Astronomia - DK">
+        </div>
+        <div class="book-info">
+            <div class="book-title">O Livro da Astronomia</div>
+            <div class="book-author">DK</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="ciências", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/livro-ecologia.jpg", alt="O Livro da Ecologia - DK">
+        </div>
+        <div class="book-info">
+            <div class="book-title">O Livro da Ecologia</div>
+            <div class="book-author">DK</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="ciências", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/ciencia-curiosos.jpg", alt="Ciência para Curiosos - Robert Winston">
+        </div>
+        <div class="book-info">
+            <div class="book-title">Ciência para Curiosos</div>
+            <div class="book-author">Robert Winston</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="ciências", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/o-cerebro.jpg", alt="O Cérebro - David Eagleman">
+        </div>
+        <div class="book-info">
+            <div class="book-title">O Cérebro</div>
+            <div class="book-author">David Eagleman</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="ciências", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/incognito.jpg", alt="Incógnito - David Eagleman">
+        </div>
+        <div class="book-info">
+            <div class="book-title">Incógnito</div>
+            <div class="book-author">David Eagleman</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="ciências", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/mente-moral.jpg", alt="A Mente Moral - Jonathan Haidt">
+        </div>
+        <div class="book-info">
+            <div class="book-title">A Mente Moral</div>
+            <div class="book-author">Jonathan Haidt</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="ciências", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/rapido-devagar.jpg", alt="Rápido e Devagar - Daniel Kahneman">
+        </div>
+        <div class="book-info">
+            <div class="book-title">Rápido e Devagar</div>
+            <div class="book-author">Daniel Kahneman</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+        <!-- ================= FANTASIA ================= -->
+
+    <div class="book-card", data-category="fantasia", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/hp-pedra-filosofal.jpg", alt="Harry Potter e a Pedra Filosofal - J. K. Rowling">
+        </div>
+        <div class="book-info">
+            <div class="book-title">Harry Potter e a Pedra Filosofal</div>
+            <div class="book-author">J. K. Rowling</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="fantasia", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/hp-camara-secreta.jpg", alt="Harry Potter e a Câmara Secreta - J. K. Rowling">
+        </div>
+        <div class="book-info">
+            <div class="book-title">Harry Potter e a Câmara Secreta</div>
+            <div class="book-author">J. K. Rowling</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="fantasia", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/hp-prisioneiro-azkaban.jpg", alt="Harry Potter e o Prisioneiro de Azkaban - J. K. Rowling">
+        </div>
+        <div class="book-info">
+            <div class="book-title">Harry Potter e o Prisioneiro de Azkaban</div>
+            <div class="book-author">J. K. Rowling</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="fantasia", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/hp-calice-fogo.jpg", alt="Harry Potter e o Cálice de Fogo - J. K. Rowling">
+        </div>
+        <div class="book-info">
+            <div class="book-title">Harry Potter e o Cálice de Fogo</div>
+            <div class="book-author">J. K. Rowling</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="fantasia", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/hp-ordem-fenix.jpg", alt="Harry Potter e a Ordem da Fênix - J. K. Rowling">
+        </div>
+        <div class="book-info">
+            <div class="book-title">Harry Potter e a Ordem da Fênix</div>
+            <div class="book-author">J. K. Rowling</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="fantasia", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/hp-enigma-principe.jpg", alt="Harry Potter e o Enigma do Príncipe - J. K. Rowling">
+        </div>
+        <div class="book-info">
+            <div class="book-title">Harry Potter e o Enigma do Príncipe</div>
+            <div class="book-author">J. K. Rowling</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="fantasia", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/hp-reliquias-morte.jpg", alt="Harry Potter e as Relíquias da Morte - J. K. Rowling">
+        </div>
+        <div class="book-info">
+            <div class="book-title">Harry Potter e as Relíquias da Morte</div>
+            <div class="book-author">J. K. Rowling</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="fantasia", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/hobbit.jpg", alt="O Hobbit - J. R. R. Tolkien">
+        </div>
+        <div class="book-info">
+            <div class="book-title">O Hobbit</div>
+            <div class="book-author">J. R. R. Tolkien</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="fantasia", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/sociedade-anel.jpg", alt="A Sociedade do Anel - J. R. R. Tolkien">
+        </div>
+        <div class="book-info">
+            <div class="book-title">A Sociedade do Anel</div>
+            <div class="book-author">J. R. R. Tolkien</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="fantasia", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/duas-torres.jpg", alt="As Duas Torres - J. R. R. Tolkien">
+        </div>
+        <div class="book-info">
+            <div class="book-title">As Duas Torres</div>
+            <div class="book-author">J. R. R. Tolkien</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="fantasia", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/retorno-rei.jpg", alt="O Retorno do Rei - J. R. R. Tolkien">
+        </div>
+        <div class="book-info">
+            <div class="book-title">O Retorno do Rei</div>
+            <div class="book-author">J. R. R. Tolkien</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="fantasia", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/silmarillion.jpg", alt="O Silmarillion - J. R. R. Tolkien">
+        </div>
+        <div class="book-info">
+            <div class="book-title">O Silmarillion</div>
+            <div class="book-author">J. R. R. Tolkien</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="fantasia", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/leao-feiticeira-guarda-roupa.jpg", alt="O Leão, a Feiticeira e o Guarda-Roupa - C. S. Lewis">
+        </div>
+        <div class="book-info">
+            <div class="book-title">O Leão, a Feiticeira e o Guarda-Roupa</div>
+            <div class="book-author">C. S. Lewis</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="fantasia", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/principe-caspian.jpg", alt="Príncipe Caspian - C. S. Lewis">
+        </div>
+        <div class="book-info">
+            <div class="book-title">Príncipe Caspian</div>
+            <div class="book-author">C. S. Lewis</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="fantasia", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/peregrino-alvorada.jpg", alt="A Viagem do Peregrino da Alvorada - C. S. Lewis">
+        </div>
+        <div class="book-info">
+            <div class="book-title">A Viagem do Peregrino da Alvorada</div>
+            <div class="book-author">C. S. Lewis</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="fantasia", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/ladrao-raios.jpg", alt="O Ladrão de Raios - Rick Riordan">
+        </div>
+        <div class="book-info">
+            <div class="book-title">O Ladrão de Raios</div>
+            <div class="book-author">Rick Riordan</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="fantasia", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/mar-monstros.jpg", alt="Mar de Monstros - Rick Riordan">
+        </div>
+        <div class="book-info">
+            <div class="book-title">Mar de Monstros</div>
+            <div class="book-author">Rick Riordan</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="fantasia", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/maldicao-tita.jpg", alt="A Maldição do Titã - Rick Riordan">
+        </div>
+        <div class="book-info">
+            <div class="book-title">A Maldição do Titã</div>
+            <div class="book-author">Rick Riordan</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="fantasia", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/batalha-labirinto.jpg", alt="A Batalha do Labirinto - Rick Riordan">
+        </div>
+        <div class="book-info">
+            <div class="book-title">A Batalha do Labirinto</div>
+            <div class="book-author">Rick Riordan</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="fantasia", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/ultimo-olimpiano.jpg", alt="O Último Olimpiano - Rick Riordan">
+        </div>
+        <div class="book-info">
+            <div class="book-title">O Último Olimpiano</div>
+            <div class="book-author">Rick Riordan</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="fantasia", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/eragon.jpg", alt="Eragon - Christopher Paolini">
+        </div>
+        <div class="book-info">
+            <div class="book-title">Eragon</div>
+            <div class="book-author">Christopher Paolini</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="fantasia", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/eldest.jpg", alt="Eldest - Christopher Paolini">
+        </div>
+        <div class="book-info">
+            <div class="book-title">Eldest</div>
+            <div class="book-author">Christopher Paolini</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="fantasia", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/brisingr.jpg", alt="Brisingr - Christopher Paolini">
+        </div>
+        <div class="book-info">
+            <div class="book-title">Brisingr</div>
+            <div class="book-author">Christopher Paolini</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="fantasia", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/heranca.jpg", alt="Herança - Christopher Paolini">
+        </div>
+        <div class="book-info">
+            <div class="book-title">Herança</div>
+            <div class="book-author">Christopher Paolini</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="fantasia", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/olho-mundo.jpg", alt="O Olho do Mundo - Robert Jordan">
+        </div>
+        <div class="book-info">
+            <div class="book-title">O Olho do Mundo</div>
+            <div class="book-author">Robert Jordan</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="fantasia", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/imperio-final.jpg", alt="O Império Final - Brandon Sanderson">
+        </div>
+        <div class="book-info">
+            <div class="book-title">O Império Final</div>
+            <div class="book-author">Brandon Sanderson</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="fantasia", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/nome-vento.jpg", alt="O Nome do Vento - Patrick Rothfuss">
+        </div>
+        <div class="book-info">
+            <div class="book-title">O Nome do Vento</div>
+            <div class="book-author">Patrick Rothfuss</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="fantasia", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/temor-sabio.jpg", alt="O Temor do Sábio - Patrick Rothfuss">
+        </div>
+        <div class="book-info">
+            <div class="book-title">O Temor do Sábio</div>
+            <div class="book-author">Patrick Rothfuss</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="fantasia", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/coraline.jpg", alt="Coraline - Neil Gaiman">
+        </div>
+        <div class="book-info">
+            <div class="book-title">Coraline</div>
+            <div class="book-author">Neil Gaiman</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="fantasia", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/deuses-americanos.jpg", alt="Deuses Americanos - Neil Gaiman">
+        </div>
+        <div class="book-info">
+            <div class="book-title">Deuses Americanos</div>
+            <div class="book-author">Neil Gaiman</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="fantasia", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/stardust.jpg", alt="Stardust - Neil Gaiman">
+        </div>
+        <div class="book-info">
+            <div class="book-title">Stardust</div>
+            <div class="book-author">Neil Gaiman</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="fantasia", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/feiticeiro-terrama.jpg", alt="O Feiticeiro de Terramar - Ursula K. Le Guin">
+        </div>
+        <div class="book-info">
+            <div class="book-title">O Feiticeiro de Terramar</div>
+            <div class="book-author">Ursula K. Le Guin</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="fantasia", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/tumbas-atuan.jpg", alt="As Tumbas de Atuan - Ursula K. Le Guin">
+        </div>
+        <div class="book-info">
+            <div class="book-title">As Tumbas de Atuan</div>
+            <div class="book-author">Ursula K. Le Guin</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="fantasia", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/bussola-ouro.jpg", alt="A Bússola de Ouro - Philip Pullman">
+        </div>
+        <div class="book-info">
+            <div class="book-title">A Bússola de Ouro</div>
+            <div class="book-author">Philip Pullman</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="fantasia", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/faca-sutil.jpg", alt="A Faca Sutil - Philip Pullman">
+        </div>
+        <div class="book-info">
+            <div class="book-title">A Faca Sutil</div>
+            <div class="book-author">Philip Pullman</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="fantasia", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/luneta-ambar.jpg", alt="A Luneta Âmbar - Philip Pullman">
+        </div>
+        <div class="book-info">
+            <div class="book-title">A Luneta Âmbar</div>
+            <div class="book-author">Philip Pullman</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="fantasia", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/magico-oz.jpg", alt="O Mágico de Oz - L. Frank Baum">
+        </div>
+        <div class="book-info">
+            <div class="book-title">O Mágico de Oz</div>
+            <div class="book-author">L. Frank Baum</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="fantasia", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/alice-pais-maravilhas.jpg", alt="Alice no País das Maravilhas - Lewis Carroll">
+        </div>
+        <div class="book-info">
+            <div class="book-title">Alice no País das Maravilhas</div>
+            <div class="book-author">Lewis Carroll</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="fantasia", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/atraves-espelho.jpg", alt="Através do Espelho - Lewis Carroll">
+        </div>
+        <div class="book-info">
+            <div class="book-title">Através do Espelho</div>
+            <div class="book-author">Lewis Carroll</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
+
+    <div class="book-card", data-category="fantasia", data-status="disponivel">
+        <div class="book-cover">
+            <img src="imagens/atraves-espelho.jpg", alt="Através do Espelho - Lewis Carroll">
+        </div>
+        <div class="book-info">
+            <div class="book-title">Através do Espelho</div>
+            <div class="book-author">Lewis Carroll</div>
+            <span class="book-status available">Disponível</span>
+        </div>
+    </div>
 </main>
 
 <footer>
