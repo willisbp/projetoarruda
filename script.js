@@ -1,38 +1,52 @@
-/* =========================
-   MENU RESPONSIVO
-========================= */
+/* ======================================================
+   1. MENU RESPONSIVO
+   Abre e fecha o menu em telas menores.
+   Também fecha automaticamente ao clicar fora.
+====================================================== */
 
 const menuToggle = document.getElementById("menu-toggle");
 const menu = document.getElementById("main-menu");
 
 if (menuToggle && menu) {
+
+    // Abrir/fechar menu
     menuToggle.addEventListener("click", () => {
-        const expanded = menuToggle.getAttribute("aria-expanded") === "true";
+
+        const expanded =
+            menuToggle.getAttribute("aria-expanded") === "true";
 
         menuToggle.setAttribute("aria-expanded", String(!expanded));
         menu.classList.toggle("active");
     });
 
+    // Fechar ao clicar fora
     document.addEventListener("click", (e) => {
+
         if (
             !menu.contains(e.target) &&
             !menuToggle.contains(e.target) &&
             menu.classList.contains("active")
         ) {
+
             menu.classList.remove("active");
             menuToggle.setAttribute("aria-expanded", "false");
         }
     });
 }
 
-/* =========================
-   TEMA ESCURO
-========================= */
+
+/* ======================================================
+   2. TEMA ESCURO
+   Alterna entre modo claro e escuro.
+   O tema fica salvo no navegador (localStorage).
+====================================================== */
 
 const temaBtn = document.getElementById("tema-btn");
 const temaSalvo = localStorage.getItem("tema");
 
+// Atualiza o ícone do botão
 function atualizarIconeTema() {
+
     if (!temaBtn) return;
 
     if (document.body.classList.contains("dark-mode")) {
@@ -42,56 +56,70 @@ function atualizarIconeTema() {
     }
 }
 
+// Carrega o tema salvo
 if (temaSalvo === "escuro") {
     document.body.classList.add("dark-mode");
 }
 
 atualizarIconeTema();
 
+// Troca o tema ao clicar
 if (temaBtn) {
+
     temaBtn.addEventListener("click", () => {
+
         document.body.classList.toggle("dark-mode");
 
-        const modo = document.body.classList.contains("dark-mode")
-            ? "escuro"
-            : "claro";
+        const modo =
+            document.body.classList.contains("dark-mode")
+                ? "escuro"
+                : "claro";
 
         localStorage.setItem("tema", modo);
         atualizarIconeTema();
     });
 }
 
-/* =========================
-   CARROSSEL
-========================= */
 
-const track = document.getElementById("carousel-track");
-const prev = document.getElementById("prev");
-const next = document.getElementById("next");
+/* ======================================================
+   3. CARROSSEL DE LIVROS
+   Move os livros horizontalmente usando os botões
+   de avançar e voltar.
+====================================================== */
 
-const scrollAmount = 200;
+document.querySelectorAll(".carousel").forEach(carousel => {
 
-if (track && prev && next) {
+    const track = carousel.querySelector(".carousel-track");
+    const prev = carousel.querySelector(".prev");
+    const next = carousel.querySelector(".next");
 
+    const scrollAmount = 200;
+
+    // Próximo
     next.addEventListener("click", () => {
+
         track.scrollBy({
             left: scrollAmount,
             behavior: "smooth"
         });
     });
 
+    // Anterior
     prev.addEventListener("click", () => {
+
         track.scrollBy({
             left: -scrollAmount,
             behavior: "smooth"
         });
     });
+});
 
-}
 
-/* =========================
-   PESQUISA DE LIVROS
-========================= */
+/* ======================================================
+   4. PESQUISA DE LIVROS
+   Procura livros pelo título ou autor enquanto
+   o usuário digita.
+====================================================== */
 
 const pesquisa = document.getElementById("search");
 
@@ -122,16 +150,15 @@ if (pesquisa) {
             } else {
                 livro.style.display = "none";
             }
-
         });
-
     });
-
 }
 
-/* =========================
-   FILTROS DO ACERVO
-========================= */
+
+/* ======================================================
+   5. FILTROS DO ACERVO
+   Filtra os livros por categoria ou disponibilidade.
+====================================================== */
 
 const botoesFiltro = document.querySelectorAll(".filter-btn");
 
@@ -141,6 +168,7 @@ if (botoesFiltro.length > 0) {
 
         botao.addEventListener("click", () => {
 
+            // Destaca o botão selecionado
             botoesFiltro.forEach((btn) =>
                 btn.classList.remove("active")
             );
@@ -158,39 +186,42 @@ if (botoesFiltro.length > 0) {
                 const categoriaLivro = livro.dataset.category;
                 const statusLivro = livro.dataset.status;
 
+                // Mostrar todos
                 if (categoria === "todos") {
 
                     livro.style.display = "block";
+                }
 
-                } else if (categoria === "disponíveis") {
+                // Mostrar apenas disponíveis
+                else if (categoria === "disponíveis") {
 
                     if (statusLivro === "disponivel") {
                         livro.style.display = "block";
                     } else {
                         livro.style.display = "none";
                     }
+                }
 
-                } else {
+                // Filtrar por categoria
+                else {
 
                     if (categoriaLivro === categoria) {
                         livro.style.display = "block";
                     } else {
                         livro.style.display = "none";
                     }
-
                 }
-
             });
-
         });
-
     });
-
 }
 
-/* =========================
-   ADICIONAR LIVRO
-========================= */
+
+/* ======================================================
+   6. ADICIONAR LIVRO
+   Cria um novo cartão de livro usando os dados
+   digitados no formulário.
+====================================================== */
 
 function adicionarLivro() {
 
@@ -202,7 +233,9 @@ function adicionarLivro() {
     if (!grid) return;
 
     grid.innerHTML += `
-        <div class="book-card" data-category="ficção" data-status="disponivel">
+        <div class="book-card"
+             data-category="ficção"
+             data-status="disponivel">
 
             <div class="book-cover">
                 📘
@@ -223,15 +256,16 @@ function adicionarLivro() {
                 </span>
 
             </div>
-
         </div>
     `;
-
 }
 
-/* =========================
-   SALVAR LIVROS
-========================= */
+
+/* ======================================================
+   7. SALVAR LIVROS
+   Cria uma lista e salva no navegador.
+   (Ainda será integrada ao formulário futuramente.)
+====================================================== */
 
 const listaLivros = [];
 
