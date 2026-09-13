@@ -32,7 +32,7 @@
             <a href="servico.html">Serviços</a>
         </div>
 
-        <button id="tema-btn">Tema</button>
+        <button id="tema-btn">🌙</button>
 
     </div>
 </nav>
@@ -43,12 +43,12 @@
     <div class="stats">
 
         <div class="stat-card">
-            <h3>20</h3>
+            <h3>157</h3>
             <p>Livros Disponíveis</p>
         </div>
 
         <div class="stat-card">
-            <h3>0</h3>
+            <h3>043</h3>
             <p>Empréstimos</p>
         </div>
 
@@ -56,42 +56,53 @@
 
     <!-- Livros em destaque -->
     <section>
-
         <h2>Em Alta</h2>
 
-        <div class="livros-grid">
+        <div class="carousel">
+            <button class="carousel-btn prev" id="prev"><</button>
 
-            <div class="livro-card">
+            <div class="carousel-track" id="carousel-track">
 
-                <div class="book-cover">
-                    <img
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMt76j895jT-kC3Kdtqr9kqqfUuXa9z8rQNZuJt3aUrw&s=10"
-                        alt="Dom Casmurro">
+                <div class="livro-card">
+                    <div class="book-cover">
+                        <img src="imagens/dom-casmurro.jpg" alt="Dom Casmurro">
+                    </div>
+                    <h3>Dom Casmurro</h3>
+                    <p>Machado de Assis</p>
                 </div>
 
-                <h3>Dom Casmurro</h3>
-
-                <p>Machado de Assis</p>
-
-            </div>
-
-
-            <div class="livro-card">
-
-                <div class="book-cover">
-                    <img
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLTEyytvILEUBGYuAqr8Wg9MrZHeJqKqQFOQswsAsFNg&s=10"
-                        alt="Inferno">
+                <div class="livro-card">
+                    <div class="book-cover">
+                        <img src="imagens/inferno.jpg" alt="Inferno">
+                    </div>
+                    <h3>Inferno</h3>
+                    <p>Dan Brown</p>
                 </div>
 
-                <h3>Inferno</h3>
+                <div class="livro-card">
+                    <div class="book-cover">
+                        <img src="imagens/1984.jpg" alt="1984">
+                    </div>
+                    <h3>1984</h3>
+                    <p>George Orwell</p>
+                </div>
 
-                <p>Dan Brown</p>
-
+                <div class="livro-card">
+                    <div class="book-cover">
+                        <img src="imagens/hobbit.jpg" alt="O Hobbit">
+                    </div>
+                    <h3>O Hobbit</h3>
+                    <p>J. R. R. Tolkien</p>
+                </div>
+                
+                <div class="livro-card">
+                    <div class=book-cover"ver-sessão" >
+                     <a href="acervo.html"> Ver Mais </a>
+                    </div>
+                </div>
             </div>
-
+            <button class="carousel-btn next" id="next">></button>
         </div>
-
     </section>
 
 
