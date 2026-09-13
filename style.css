@@ -1,7 +1,7 @@
 :root{
     --primary: rgb(61, 107, 61);
     --primary-dark: #3d6b3d;
-    --bg: rgb(245, 245, 220);
+    --bg: rgb(255, 255, 198);
     --card: #ffffff;
     --text: #0b1b2b;
     --border: #d1d5db;
@@ -41,6 +41,66 @@ header img{
     height:auto;
     display:block;
     margin:auto;
+}
+
+/* ===== CARROSSEL ===== */
+
+.carousel{
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.carousel-track{
+    display: flex;
+    gap: 20px;
+    overflow: hidden;
+    scroll-behavior: smooth;
+
+    width: calc((180px * 5) + (20px * 4));
+}
+
+.carousel-btn{
+    width: 25px;
+    height: 45px;
+    border-radius: 6px;
+    background: var(--primary);
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.carousel-btn:hover{
+    background: var(--primary-dark);
+    transform: translateY(-2px);
+}
+
+.carousel-track .livro-card{
+    min-width: 180px;
+    flex: 0 0 180px;
+}
+
+.ver-acervo{
+    background: var(--primary);
+    text-align: center;
+}
+
+.ver-sessão a{
+    text-decoration: none;
+    color: white;
+}
+
+.ver-sessão .book-cover{
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ver-sessão:hover{
+    transform: translateY(-5px);
 }
 
    /* CONTAINER */
@@ -190,6 +250,29 @@ section h2{
 }
 
 /* ACERVO */
+
+/* BARRA DE PESQUISA */
+
+.search-box{
+    width:100%;
+    padding:12px;
+    margin-top:10px;
+
+    border:1px solid var(--border);
+    border-radius:8px;
+
+    background:var(--card);
+    color:var(--text);
+
+    font-size:1rem;
+    outline:none;
+}
+
+.search-box:focus{
+    border-color:var(--primary);
+
+    box-shadow:0 0 0 3px rgba(61,107,61,.15);
+}
 
 .filters{
     display:flex;
